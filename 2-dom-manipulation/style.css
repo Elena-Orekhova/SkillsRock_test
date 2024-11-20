@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+  margin: 30px;
+}
+
+.button {
+  background: #000;
+  border: none;
+  cursor: pointer;
+  min-height: 40px;
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+  margin: 40px;
+}
+
+.form {
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+}
+
+.filters {
+  padding-bottom: 5px;
+}
+
+.select {
+  padding: 5px;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.task-list {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.task-item {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 80% 10% 10%;
+  padding: 0;
+  margin: 10px 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task-item p {
+  margin: 10px;
+}
+
+.task-input {
+  width: 80%;
+  padding: 10px;
+}
+
+.completed {
+  background-color: rgb(193, 244, 193, 0.2);
+}
+
+.check-mark {
+  visibility: hidden;
+  color: green;
+  margin-left: 10px;
+}
+
+.check-mark.visible {
+  visibility: visible;
+}
+
+

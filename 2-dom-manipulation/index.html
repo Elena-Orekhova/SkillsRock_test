@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задачи</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">Здесь вы можете добавить и удалить задачи, а также отметить их как выполненные</h1>
+  </header>
+  <main>
+    <form class="form">
+      <label for="filters" class="filters">Выберите фильтр</label>
+      <select id="filters" name="filters" class="select">
+        <option value="all">Все</option>
+        <option value="completed">Выполненные</option>
+        <option value="unfulfilled">Невыполненные</option>
+      </select>
+    </form>
+
+    <div class="task">
+      <input type="text" id="task-input" placeholder="Введите задачу" class="task-input">
+      <button type="button" id="add-task-button" class="button button-add">
+        ➕
+      </button>
+    </div>
+    <ul id="task-list" class="task-list"></ul>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

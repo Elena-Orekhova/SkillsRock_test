@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  margin: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+#error-message {
+  color: red;
+}
+
+#carousel-image {
+  width: 50%;
+}

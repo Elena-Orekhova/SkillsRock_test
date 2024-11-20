@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Демонстрация функций</title>
+</head>
+<body>
+  <h1>Демонстрация функций</h1>
+
+  <h2>1. Проверка на палиндром</h2>
+  <input type="text" id="palindromeInput" placeholder="Введите текст">
+  <button onclick="checkPalindrome()">Проверить</button>
+  <div class="output" id="palindromeOutput"></div>
+
+  <h2>2. FizzBuzz</h2>
+  <button onclick="runFizzBuzz()">Запустить FizzBuzz</button>
+  <div class="output" id="fizzBuzzOutput"></div>
+
+  <h2>3. Разбиение массива на части</h2>
+  <input type="text" id="chunkInputArray" placeholder="Введите массив (через запятую)">
+  <input type="number" id="chunkSize" placeholder="Размер части">
+  <button onclick="chunkArrayDemo()">Разбить</button>
+  <div class="output" id="chunkOutput"></div>
+
+  <h2>4. Калькулятор</h2>
+  <input type="number" id="num1" placeholder="Число 1">
+  <input type="number" id="num2" placeholder="Число 2">
+  <button onclick="calculate('add')">Сложить</button>
+  <button onclick="calculate('subtract')">Вычесть</button>
+  <button onclick="calculate('multiply')">Умножить</button>
+  <button onclick="calculate('divide')">Делить</button>
+  <div class="output" id="calculatorOutput"></div>
+
+  <h2>5. Debounce</h2>
+  <button id="debounceButton">Нажмите несколько раз</button>
+  <div class="output" id="debounceOutput"></div>
+  <div class="output" id="rawClickOutput"></div>
+  
+  <h2>6. Глубокое клонирование объекта</h2>
+  <button onclick="cloneDemo()">Клонировать объект</button>
+  <div class="output" id="cloneOutput"></div>
+
+  <script src="1-basic.js"></script>
+  <script src="4-calculator.js"></script>
+  <script src="5-optimization.js"></script>
+</body>
+</html>
